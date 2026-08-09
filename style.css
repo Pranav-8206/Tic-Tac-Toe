@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(27, 7, 24);
+    color: white;
+    height: 75;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+margin-top: 50px;
+}
+
+.Container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+     grid-template-columns: repeat(3, 10vw);
+     font-family: 'Courier New', Courier, monospace;
+     position: relative;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(199, 172, 225);
+}
+.info{
+    font-size: 30px;
+    font-family: 'lucida sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    padding: 0 20px;
+    font-weight: light;
+    font-style: italic;
+    font-size: 20px;
+}
+.gameinfo{
+    padding: 0 34px;
+}
+.gameInfo h1{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.imagebox img{
+    width: 0px;
+    transition: all 0.5s ease-in-out;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bb-0.bt-0{
+    border-top: 0;
+    border-bottom: 0;
+}
+.br-0.bl-0{
+    border-right: 0;
+    border-left: 0;
+}
+.btn{
+    padding: 1px 20px;
+    background-color: rgb(203, 152, 237);
+    color: rgb(0, 0, 0);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+    .line{
+        width: 0;
+        background-color: black;
+        height: 3px;
+        position: absolute;
+        background-color: rgba(98, 1, 85, 0.885);
+      transition: all 1s ease-in-out;
+    }
+@media  screen and (max-width: 950px)
+  {
+   .gameContainer{ 
+    flex-wrap: wrap;
+    }
+    .gameinfo{
+       margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    
+  }

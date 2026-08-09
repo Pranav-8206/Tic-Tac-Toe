@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe | Pranav Shinde</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>🎮 Tic Tac Toe Game</li>
+        </ul>
+    </nav>
+
+    <div class="gameContainer">
+
+        <!-- Game Board -->
+        <div class="Container">
+
+            <div class="line"></div>
+
+            <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
+            <div class="box bt-0"><span class="boxtext"></span></div>
+            <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+
+            <div class="box bl-0"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box br-0"><span class="boxtext"></span></div>
+
+            <div class="box bl-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box bb-0"><span class="boxtext"></span></div>
+            <div class="box bb-0 br-0"><span class="boxtext"></span></div>
+
+        </div>
+
+        <!-- Game Info -->
+        <div class="gameinfo">
+
+            <h1>Tic Tac Toe</h1>
+
+            <span class="info">Turn for X</span>
+
+            <div class="buttons">
+                <button id="reset" class="btn">Reset Game</button>
+                <button id="resetScore" class="btn">Reset Score</button>
+            </div>
+
+            <!-- Scoreboard -->
+            <div class="scoreboard">
+
+                <h2>🏆 Scoreboard</h2>
+
+                <div class="score">
+                    <p>❌ X Wins : <span id="xscore">0</span></p>
+                    <p>⭕ O Wins : <span id="oscore">0</span></p>
+                    <p>🤝 Draws : <span id="drawscore">0</span></p>
+                </div>
+
+            </div>
+
+            <!-- Winner Image -->
+            <div class="imagebox">
+                <img src="winner.gif" alt="Winner">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
